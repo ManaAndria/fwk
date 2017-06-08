@@ -2,6 +2,8 @@
 	define('ROOT', dirname(__DIR__));
 	require '../app.php';
 
+	SESSION_START();
+	$_SESSION['user'] = '76f57189cd6ef896bd3f5c64e5f242025db4d784';
 	$app = new App();
 	$app->load();
 	$config = require ROOT . "/app/Config/Database.php";
