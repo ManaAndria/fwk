@@ -2,6 +2,7 @@
 	define('ROOT', dirname(__DIR__));
 	require '../app.php';
 
+	SESSION_START();
 	$app = new App();
 	$app->load();
 	$config = require ROOT . "/app/Config/Database.php";
